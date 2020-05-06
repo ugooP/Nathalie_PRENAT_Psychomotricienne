@@ -1,0 +1,53 @@
+/* COLOR : #19CCA0 */
+
+html {
+    scroll-behavior: smooth;
+    font-family: montserrat, sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* ACCUEIL */
+header {
+    background-color: gray;
+    height: 70px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+header h2 {
+    margin: 0;
+}
+header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+header ul li a {
+    text-decoration: none;
+    margin: 0 15px;
+    color: rgb(0, 0, 0, .6);
+    font-weight: normal;
+}
+header .last_li {
+    margin-right: 40px;
+}
+
+/* ACCUEIL */
+
+#accueil {
+    height: 500px;
+    width: 100%;
+    background-image: url("img/main1_bg.jpg");
+    background-size: cover;
+}
+#accueil h1 {
+    margin: 0;
+}
