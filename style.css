@@ -11,8 +11,8 @@ body {
 
 /* ACCUEIL */
 header {
-    background-color: gray;
-    height: 70px;
+    background-color: white;
+    height: 10vh;
     position: sticky;
     top: 0;
     display: flex;
@@ -21,7 +21,8 @@ header {
     align-items: center;
 }
 header h2 {
-    margin: 0;
+    margin: 0 20px;
+    font-weight: 600;
 }
 header ul {
     list-style: none;
@@ -43,11 +44,39 @@ header .last_li {
 /* ACCUEIL */
 
 #accueil {
-    height: 500px;
-    width: 100%;
+    height: 89.5vh;
     background-image: url("img/main1_bg.jpg");
     background-size: cover;
+    background-position: right;
+    border-bottom: .5vh solid #19CCA0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-#accueil h1 {
+#accueil .accueil_txt h1 {
+    display: inline;
     margin: 0;
+    font-size: 55px;
+    padding-right: 10px;
+    box-shadow: inset 0 -27px rgba(25, 204, 160, .6);
+}
+#accueil .accueil_txt {
+    margin-left: 100px;
+}
+#accueil .accueil_txt h2 {
+    margin: 10px 0;
+    font-size: 23px;
+}
+
+/* A PROPOS */
+
+#a_propos {
+
+}
+
+#a_propos img {
+    width: 100%;
+}
+#a_propos .a_propos_txt h2 {
+
 }
