@@ -112,6 +112,9 @@ header .last_li {
 
 /* CONSULTATIONS */
 
+#consultations {
+    height: 1400px;
+}
 #consultations .consultations_title {
     display: flex;
     flex-direction: column;
@@ -170,4 +173,49 @@ header .last_li {
     display: inline;
     content: "-";
     padding-right: 5px;
+}
+
+/* TARIFS */
+
+#tarifs .tarifs_title {
+    width: 100%;
+    padding-top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#tarifs .tarifs_title span {
+    display: block;
+    width: 70px;
+    height: 3px;
+    border-radius: 50px;
+    background-color: #19CCA0;
+    margin-bottom: 10px;
+}
+#tarifs .tarifs_title h2 {
+    margin: 0;
+    margin-bottom: 80px;
+    text-transform: uppercase;
+}
+#tarifs .card_list {
+    display: flex;
+    justify-content: space-around;
+}
+#tarifs .card {
+    width: 330px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+#tarifs .card p:first-child {
+    font-weight: 600;
+}
+#tarifs .card p:last-child {
+    font-weight: 700;
+    font-size: 30px;
+    padding: 0 5px;
+    background: linear-gradient(transparent 0%, transparent 60%, rgba(25, 204, 160, .6) 60%,  rgba(25, 204, 160, .6) 95%, transparent 95%);
 }
