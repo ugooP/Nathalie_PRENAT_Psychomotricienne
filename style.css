@@ -15,6 +15,7 @@ header {
     height: 10vh;
     position: sticky;
     top: 0;
+    z-index: +1;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -23,6 +24,7 @@ header {
 header h2 {
     margin: 0 20px;
     font-weight: 600;
+    font-size: 20px;
 }
 header ul {
     list-style: none;
@@ -36,6 +38,7 @@ header ul li a {
     margin: 0 15px;
     color: rgb(0, 0, 0, .6);
     font-weight: normal;
+    font-size: 15px;
 }
 header .last_li {
     margin-right: 40px;
@@ -44,11 +47,11 @@ header .last_li {
 /* ACCUEIL */
 
 #accueil {
-    height: 89.5vh;
+    height: 89.7vh;
     background-image: url("img/main1_bg.jpg");
     background-size: cover;
     background-position: right;
-    border-bottom: .5vh solid #19CCA0;
+    border-bottom: .3vh solid #19CCA0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -56,22 +59,23 @@ header .last_li {
 #accueil .accueil_txt h1 {
     display: inline;
     margin: 0;
-    font-size: 55px;
+    font-size: 45px;
     padding-right: 10px;
-    box-shadow: inset 0 -27px rgba(25, 204, 160, .6);
+    background: linear-gradient(transparent 0%, transparent 60%, rgba(25, 204, 160, .6) 60%);
+
 }
 #accueil .accueil_txt {
     margin-left: 100px;
 }
 #accueil .accueil_txt h2 {
     margin: 10px 0;
-    font-size: 23px;
+    font-size: 18px;
 }
 
 /* A PROPOS */
 
 #a_propos {
-    height: 600px;
+    padding-top: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -82,13 +86,13 @@ header .last_li {
     justify-content: center;
 }
 #a_propos img {
-    height: 309px;
+    height: 308px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
 #a_propos .a_propos_txt {
     width: 45%;
-    border: 3px solid #19CCA0;
+    border: 2px solid #19CCA0;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     display: flex;
@@ -98,10 +102,72 @@ header .last_li {
 }
 #a_propos .a_propos_txt h2 {
     text-align: center;
-    margin: 0;
-    margin-top: 3%;
+    margin-top: 10px;
 }
 #a_propos .a_propos_txt p {
     text-align: center;
-    margin: 3%;
+    margin: 2% 3%;
+    font-size: 15px;
+}
+
+/* CONSULTATIONS */
+
+#consultations .consultations_title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 120px;
+    padding-top: 200px;
+}
+#consultations .consultations_title span {
+    width: 170px;
+    height: 3px;
+    border-radius: 50px;
+    background-color: #19CCA0;
+    margin-bottom: 10px;
+}
+#consultations .consultations_title h2 {
+    text-transform: uppercase;
+    margin: 0;   
+}
+#consultations .consultations_title p {
+    opacity: .6;
+    margin: 0;
+    font-size: 14px;
+}
+#consultations .card {
+    margin: 30px 5%;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#consultations .card img {
+    width: 200px;
+    border-radius: 50%;
+}
+#consultations .card_right {
+    float: right;
+}
+#consultations .card_right img {
+    margin-left: 30px;
+}
+#consultations .card_left .card_txt {
+    margin-left: 3%;
+}
+#consultations .card_txt h2 {
+    display: inline;
+    font-size: 23px;
+    padding-right: 7px;
+    background: linear-gradient(transparent 0%, transparent 60%, rgba(25, 204, 160, .6) 60%);
+}
+#consultations .card_txt li {
+    list-style: none;
+    font-size: 14px;
+    color: rgba(0, 0, 0, .7);
+}
+#consultations .card_txt li::before {
+    display: inline;
+    content: "-";
+    padding-right: 5px;
 }
