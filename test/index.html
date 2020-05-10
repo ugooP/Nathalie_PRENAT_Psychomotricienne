@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        header {
+            height: 10vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 50px rgb(175, 175, 175);
+        }
+        ul {
+            list-style: none;
+            margin: 0;
+            display: grid;
+            grid-template-columns: repeat(5, auto);
+            grid-template-rows: 1em 10px;
+        }
+        li:nth-child(1) a {
+            grid-column: 1;
+        }
+        li:nth-child(2) a {
+            grid-column: 2;
+        }
+        li:nth-child(2) a {
+            grid-column: 3;
+        }
+        li a {
+            padding-right: 0;
+            color: rgba(0, 0, 0, .5);
+            text-decoration: none;
+            margin: 0 10px;
+            font-family: montserrat;
+            transition: color  .2s, font-weight .2s;
+        }
+        .active {
+            color: rgba(0, 0, 0, 1);
+            font-weight: 600;
+        }
+        .active_span {
+            display: block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #19CCA0;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="#accueil" class="active">Accueil</a></li>
+            <li><a href="#a_propos">A propos de moi</a></li>
+            <li><a href="#consultations">Consultations</a></li>
+            <li><a href="#tarifs">Tarifs</a></li>
+            <li><a href="#contact">Contact</a></li>
+
+            <li><span class="active_span"></span></li>
+            <li><span></span></li>
+            <li><span></span></li>
+            <li><span></span></li>
+            <li><span></span></li>
+        </ul>
+    </header>
+    <script src="script.js"></script>
+</body>
+</html>
