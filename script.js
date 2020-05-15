@@ -31,10 +31,7 @@ for (let i = 0; i < liens.length; i++) {
     }) 
 }
 
-//  GESTION LIENS HEADER AU SCROLL  //
-
-
-// const x = scroll_function();
+//  GESTION LIENS ET SPAN HEADER AU SCROLL  //
 
 function scroll_function() {
     
@@ -43,42 +40,42 @@ function scroll_function() {
     const small_div_height = big.scrollTop;
 
     if (small_div_height < 280) {
-        // LIENS //
+        // "ACCUEIL" //
         document.querySelector('.active_a').classList.remove('active_a')
         liens[0].classList.add('active_a')
-        // SPAN //
+
         document.querySelector('.active_span').classList.remove('active_span')
         span[0].classList.add('active_span')
     }
     else if (small_div_height < 1000) {
-        // LIENS //
+        // "A PROPOS" //
         document.querySelector('.active_a').classList.remove('active_a')
         liens[1].classList.add('active_a')
-        // SPAN //
+
         document.querySelector('.active_span').classList.remove('active_span')
         span[1].classList.add('active_span')
     }
     else if (small_div_height < 2300) {
-        // LIENS //
+        // "CONSULTATIONS" //
         document.querySelector('.active_a').classList.remove('active_a')
         liens[2].classList.add('active_a')
-        // SPAN //
+
         document.querySelector('.active_span').classList.remove('active_span')
         span[2].classList.add('active_span')
     }
     else if (small_div_height < 2800) {
-        // LIENS //
+        // "TARIFS" //
         document.querySelector('.active_a').classList.remove('active_a')
         liens[3].classList.add('active_a')
-        // SPAN //
+
         document.querySelector('.active_span').classList.remove('active_span')
         span[3].classList.add('active_span')
     }
     else if (small_div_height < 4200) {
-        // LIENS //
+        // "CONTACT" //
         document.querySelector('.active_a').classList.remove('active_a')
         liens[4].classList.add('active_a')
-        // SPAN //
+
         document.querySelector('.active_span').classList.remove('active_span')
         span[4].classList.add('active_span')
     }
