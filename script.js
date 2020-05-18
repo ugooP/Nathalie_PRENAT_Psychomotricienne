@@ -37,9 +37,9 @@ function scroll_function() {
     
     const big = document.querySelector('.big_div');
     const small_div = document.querySelector('.small_div');
-    const small_div_height = big.scrollTop;
+    const small_div_height = big.scrollTop;    
 
-    if (small_div_height < 280) {
+    if (small_div_height < 170) {
         // "ACCUEIL" //
         document.querySelector('.active_a').classList.remove('active_a')
         liens[0].classList.add('active_a')
@@ -47,7 +47,7 @@ function scroll_function() {
         document.querySelector('.active_span').classList.remove('active_span')
         span[0].classList.add('active_span')
     }
-    else if (small_div_height < 1000) {
+    else if (small_div_height < 1100) {
         // "A PROPOS" //
         document.querySelector('.active_a').classList.remove('active_a')
         liens[1].classList.add('active_a')

@@ -9,13 +9,11 @@ body {
     overflow: hidden;
 }
 .big_div {
-    width: 100%;
     height: 100vh;
     scroll-behavior: smooth;
     overflow: auto;
 }
 .small_div {
-    width: 100%;
     height: 4215px;
 }
 
@@ -89,11 +87,11 @@ header ul li span {
 /* ACCUEIL */
 
 #accueil {
-    height: 89.7vh;
+    height: 90vh;
     background-image: url("img/accueil_bg.jpg");
     background-size: cover;
     background-position: right;
-    border-bottom: 4px solid #19CCA0;
+    border-bottom: 2px solid #19CCA0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -193,7 +191,6 @@ header ul li span {
 #consultations .card_right {
     float: right;
     text-align: right;
-
 }
 #consultations .card_right img {
     margin-left: 30px;
@@ -206,10 +203,10 @@ header ul li span {
     font-size: 23px;
     background: linear-gradient(transparent 0%, transparent 60%, rgba(25, 204, 160, .5) 60%);
 }
-#consultations .card_left .card_txt h2, #consultations .card_left .card_txt span {
+#consultations .card_left .card_txt h2, #consultations .card_left .card_txt h2 span {
     padding-right: 7px;
 }
-#consultations .card_right .card_txt h2, #consultations .card_right .card_txt span {
+#consultations .card_right .card_txt h2, #consultations .card_right .card_txt h2 span {
     padding-left: 7px;
 }
 #consultations .card_right h2 {
@@ -222,11 +219,11 @@ header ul li span {
     text-align: left;
 }
 #consultations .card_txt li::before {
-    display: inline;
+    display: inline; 
     content: "-";
     padding-right: 5px;
 }
-#consultations .card_txt ul span {
+#consultations .card_left .card_txt ul .span_physique, .span_ecrit {
     margin-left: 11px;
 }
 
@@ -333,27 +330,16 @@ header ul li span {
 
 /* RESPONSIVE */
 
-@media screen and (max-width: 1030px){
+@media (max-width: 1010px){
 
     /* HEADER */
-    header {
-        height: 60px;
-    }
     header h2 {
-        margin: 0 5px;
+        margin: 0 10px;
     }
     header ul {
-        margin-right: 10px;
+        margin-right: 15px;
     }
-
     /* ACCUEIL */
-    #accueil {
-        /* height: 400px;
-        background-image: url("img/accueil_bg_responsive.jpg");
-        background-size: 100% auto;
-        background-repeat: no-repeat;
-        background-position: 0 0; */
-    }
     #accueil .accueil_txt {
         margin-left: 50px;
     }
@@ -410,20 +396,177 @@ header ul li span {
         padding-top: 10vh;
     }
     #contact .contact_card_list .card {
-        margin-left: 25%;
+        margin-left: 30%;
     }
     #contact iframe {
         height: 550px;
         width: 90%;
         margin: 0 5%;
     }
+    #contact iframe {
+        height: 65vh;
+    }
+}
 
+@media (max-width: 780px) {
+    header {
+        justify-content: center;
+    }
+    header h2 {
+        display: none;
+    }
+    /* ACCUEIL */
+    #accueil {
+        background-image: none;
+        border: none;
+    }
+    #accueil .accueil_txt {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
+    }
+    #accueil .accueil_txt h1 {
+        font-size: 34px;
+    }
+    #accueil .accueil_txt h2 {
+        font-size: 14px;
+    }
+    /* A PROPOS */
+    #a_propos .a_propos_card img {
+        width: 60%;
+    }
+    #a_propos .a_propos_txt {
+        width: 59.7%;
+    }
+    /* CONSULTATIONS */
+    #consultations .card img {
+        display: none;
+    }
+    /* CONTACT */
+    #contact .contact_card_list .card {
+        margin-left: 20%;
+    }
+}
 
-
-
-
-
-
-
-    
-} 
+@media (max-width: 550px) {
+    .small_div {
+        height: 3600px;
+    }
+    header {
+        display: none;
+    }
+    /* ACCUEIL */
+    #accueil {
+        height: 50vh;
+    }
+    /* CONSULTATIONS */
+    #consultations .consultations_title span {
+        margin-bottom: 5px;
+    }
+    #consultations .consultations_title h2 {
+        font-size: 18px;
+    }
+    #consultations .consultations_title p {
+        font-size: 13px;
+    }
+    #consultations .card {
+        margin: 25px 0;
+        width: 95%;
+        float: none;
+    }
+    #consultations .card_left .card_txt {
+        margin-left: 0;
+    }
+    #consultations .card_right {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 5%;
+    }
+    #consultations .card_left {
+        margin-left: 5%;
+    }
+    #consultations ul {
+        padding-left: 0;
+    }
+    #consultations .span_ecrit {
+        margin-left: 0;
+    }
+    /* CONTACT */
+    #contact .contact_title h2 {
+        margin-bottom: 60px;
+    }
+    #contact .contact_card_list {
+        margin-bottom: 100px;
+    }
+    #contact .contact_card_list .card {
+        margin-left: 10%;
+    }
+}
+@media (max-width: 463px) {
+    #consultations .span_ou {
+        margin-left: 11px;
+    }
+}
+@media (max-width: 445px) {
+    /* A PROPOS */
+    #a_propos .a_propos_card img {
+        width: 80%;
+    }
+    #a_propos .a_propos_txt {
+        width: 79.6%;
+    }
+    /* CONSULTATIONS */
+    #consultations .card_txt h2 {
+        font-size: 18px;
+    }
+    #consultations .card_txt li {
+        font-size: 13px;
+    }
+    /* TARIFS */
+    #tarifs .tarifs_title h2 {
+        font-size: 19px;
+    }
+    #tarifs .tarifs_title span {
+        height: 2px;
+        margin-bottom: 3px;
+        width: 50px;
+    }
+    #tarifs .card_list {
+        height: 400px;
+    }
+    #tarifs .card p:first-child {
+        font-size: 14px;
+    }
+    #tarifs .card p:last-child {
+        font-size: 20px;
+    }
+    /* CONTACT */
+    #contact .contact_title h2 {
+        font-size: 18px;
+    }
+    #contact .contact_title span {
+        height: 2px;
+        margin-bottom: 3px;
+    }
+    #contact .contact_card_list .card {
+        margin-left: 7%;
+    }
+    #contact .contact_card_list .card img {
+        width: 30px;
+    }
+    #contact .contact_card_list .card a, .contact_card_list .card p {
+        font-size: 13px;
+    }
+}
+@media (max-width: 408px){
+    #consultations .span_psychique {
+        margin-left: 11px;
+    }
+}
+@media (max-width: 391px){
+    #consultations .span_relationnelles {
+        margin-left: 11px;
+    }
+}
